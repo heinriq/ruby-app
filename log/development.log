@@ -2659,3 +2659,22 @@ Processing by ClientesController#new as HTML
 Completed 200 OK in 8470ms (Views: 8393.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/clientes" for 127.0.0.1 at 2018-06-10 10:32:28 -0300
+  [1m[35m (221.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (978.7ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes"[0m
+  ↳ app/views/clientes/index.html.erb:16
+  Rendered clientes/index.html.erb within layouts/application (2169.7ms)
+Completed 200 OK in 18456ms (Views: 14900.2ms | ActiveRecord: 1996.6ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2018-06-10 10:33:11 -0300
+Processing by ClientesController#new as HTML
+  Rendering clientes/new.html.erb within layouts/application
+  Rendered clientes/_form.html.erb (2975.0ms)
+  Rendered clientes/new.html.erb within layouts/application (3044.0ms)
+Completed 200 OK in 3794ms (Views: 3702.7ms | ActiveRecord: 0.0ms)
+
+
