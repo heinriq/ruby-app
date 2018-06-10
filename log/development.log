@@ -2816,3 +2816,12 @@ Processing by ClientesController#new as HTML
 Completed 200 OK in 572ms (Views: 491.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/clientes" for 127.0.0.1 at 2018-06-10 18:44:10 -0300
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (4.0ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes"[0m
+  ↳ app/views/clientes/index.html.erb:16
+  Rendered clientes/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 832ms (Views: 755.1ms | ActiveRecord: 4.0ms)
+
+
