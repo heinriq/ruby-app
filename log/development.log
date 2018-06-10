@@ -2825,3 +2825,63 @@ Processing by ClientesController#index as HTML
 Completed 200 OK in 832ms (Views: 755.1ms | ActiveRecord: 4.0ms)
 
 
+Started GET "/clientes" for 127.0.0.1 at 2018-06-10 18:53:51 -0300
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (64.0ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes"[0m
+  ↳ app/views/clientes/index.html.erb:16
+  Rendered clientes/index.html.erb within layouts/application (914.3ms)
+Completed 200 OK in 1428ms (Views: 558.8ms | ActiveRecord: 797.2ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2018-06-10 18:53:58 -0300
+Processing by ClientesController#new as HTML
+  Rendering clientes/new.html.erb within layouts/application
+  Rendered clientes/_form.html.erb (8.0ms)
+  Rendered clientes/new.html.erb within layouts/application (100.0ms)
+Completed 200 OK in 680ms (Views: 593.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clientes" for 127.0.0.1 at 2018-06-10 18:54:20 -0300
+Processing by ClientesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AaudFEQQdwTMXj9f+kc4vB4TygdtFICRnzyzjMCCtN18SHPWFUol+NhWiqpEdFf3ZtKFfBmga3dQPgEeAeTNtw==", "cliente"=>{"name"=>"Henrique Alves", "phone"=>"(11) 11111-1111"}, "commit"=>"Create Cliente"}
+  [1m[35m (4.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/clientes_controller.rb:30
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/clientes_controller.rb:30
+  Rendering clientes/new.html.erb within layouts/application
+  Rendered clientes/_form.html.erb (8.0ms)
+  Rendered clientes/new.html.erb within layouts/application (88.0ms)
+Completed 200 OK in 560ms (Views: 547.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2018-06-10 18:55:04 -0300
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (0.0ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes"[0m
+  ↳ app/views/clientes/index.html.erb:16
+  Rendered clientes/index.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 528ms (Views: 462.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clientes/new" for 127.0.0.1 at 2018-06-10 18:55:07 -0300
+Processing by ClientesController#new as HTML
+  Rendering clientes/new.html.erb within layouts/application
+  Rendered clientes/_form.html.erb (4.0ms)
+  Rendered clientes/new.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 656ms (Views: 555.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clientes" for 127.0.0.1 at 2018-06-10 18:55:18 -0300
+Processing by ClientesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x1ih3mmgjVFSQ31Ske1x+HXcXlq8F/XggaksDj3xwUy6u08cOPrfrUZLyKcv3h6zDR0RIcijHgZOq56c/Je4Jg==", "cliente"=>{"name"=>"Henrique Alves", "phone"=>"(11) 11111-1111"}, "commit"=>"Create Cliente"}
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/clientes_controller.rb:30
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/clientes_controller.rb:30
+  Rendering clientes/new.html.erb within layouts/application
+  Rendered clientes/_form.html.erb (8.0ms)
+  Rendered clientes/new.html.erb within layouts/application (84.0ms)
+Completed 200 OK in 544ms (Views: 534.2ms | ActiveRecord: 0.0ms)
+
+
