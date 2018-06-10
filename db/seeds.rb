@@ -8,7 +8,7 @@
 
 Faker::Config.locale = :"pt-BR"
 
-50.times do
+500.times do
     Cliente.create({
         name: Faker::Name.name,
         phone: Faker::PhoneNumber.phone_number
