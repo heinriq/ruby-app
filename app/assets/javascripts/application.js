@@ -32,7 +32,6 @@
         return v;
     }
     function id( el ){
-      console.log(el);
         return document.getElementById( el );
     } 
     
