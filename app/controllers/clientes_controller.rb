@@ -1,5 +1,5 @@
 class ClientesController < ApplicationController
-  before_action :set_cliente, only: [:show, :edit, :update, :destroy]
+  before_action :set_cliente, only: [:show, :edit, :update]
 
   # GET /clientes
   # GET /clientes.json
@@ -48,16 +48,6 @@ class ClientesController < ApplicationController
         format.html { render :edit }
         format.json { render json: @cliente.errors, status: :unprocessable_entity }
       end
-    end
-  end
-
-  # DELETE /clientes/1
-  # DELETE /clientes/1.json
-  def destroy
-    @cliente.destroy
-    respond_to do |format|
-      format.html { redirect_to clientes_url, notice: 'Cliente was successfully destroyed.' }
-      format.json { head :no_content }
     end
   end
 
