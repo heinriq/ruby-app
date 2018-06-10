@@ -22,7 +22,6 @@
         setTimeout("execmascara()",1)
     }
     function execmascara(){
-        console.log("exec");
         v_obj.value=v_fun(v_obj.value)
     }
     function mtel(v){
@@ -30,7 +29,6 @@
         v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
         v=v.replace(/(.{14})(.*)/gm, "$1");
         v=v.replace(/(\d)(\d{4})$/,"$1-$2");    //Coloca hífen entre o quarto e o quinto dígitos
-        console.log(v);
         return v;
     }
     function id( el ){
